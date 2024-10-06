@@ -40,11 +40,6 @@ The source code for YOLOv5 can be found on [YOLOv5](https://github.com/ultralyti
 
 ## Data source
 
-<br />
-<p float="center">
-  <img src="readme_img/Themis.jpeg" width="400" height="400"/>
-  <img src="readme_img/1.png" width="400" height="400"/> 
-</p>
 The dataset used in this project is generated from the Robbins and Hynek database 2020 version that counts > 38400 craters on mars with diameter greater than 1km. THEMIS DAY IR mosaic images [12] are linked to this database according to their range of longitude and latitude. 
 
 Robbins and Hynek dataset can be found on [database download]( http://craters.sjrdesign.net/)
