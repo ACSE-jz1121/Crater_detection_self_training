@@ -13,16 +13,7 @@
         <li><a href="#install-dependencies">Install Dependencies</a></li>
       </ul>
     </li>
-    <li><a href="#repository-structure">Repository Structure</a>
-      <ul>
-        <li><a href="#data_source">Data_source</a></li>
-        <li> <a href="#dataset_generation">Dataset_generation</a></li>    
-          <li><a href="#self-training">Self_training</a></li>
-            </ul>
-        </li>
-      </ul>   
-    </li>
-     <li><a href="#run-all">Run all</a></li>
+     <li><a href="#run-all">How to run</a></li>
     <li><a href="#installation">Installation</a></li>
     <li><a href="#usage-of-code">Usage of code</a></li>
     <li><a href="#Contact">Contact</a></li>
@@ -36,7 +27,7 @@
 ## Project Description
  The objective of this work is to detect impact craters with diameter less than 1km. YOLOv5 model has been utilized as a powerful object detection tool for crater detection. An auto-iterative self-training system has been proposed to detect small craters with diameter less than 1km, which incorporate an IoU-based ensemble learning strategy as an extension of the Pseudo-label selection metric. 
 
-The source code for YOLOv5 can be found on [YOLOv5](https://github.com/ultralytics/yolov5). This model provides the benchmark for this project, the instruction on clone yolov5 repositorys is described in the [Self-training.ipynb](https://colab.research.google.com/drive/1EAfCg-VbW3svYKns10DNAWDH35J66xAu?usp=sharing)
+The source code for YOLOv5 can be found on [YOLOv5](https://github.com/ultralytics/yolov5). This model provides the benchmark for this project, the instruction on clone yolov5 repositorys is described in the [Self-training.ipynb](https://colab.research.google.com/drive/1mWEVufggf9rZDaF8Us1aFWjDGQtajN7N?usp=sharing)
 
 ## Data source
 
