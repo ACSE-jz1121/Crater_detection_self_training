@@ -12,7 +12,7 @@
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#how-to-run">How to Run</a></li>
+    <li><a href="#how-to-run">Workflow</a></li>
     <li><a href="#usage-of-code">Usage of Code</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -45,7 +45,12 @@ Install dependencies
 
 $ pip install -r requirements.txt
 
+## Workflow
+The first step to run this crater detection algorithm is to generate your training and detection dataset. The dataset and generation code can be found in the "data generation" folder.
 
+To run the self-training system and start detecting smaller craters, follow the instructions provided in the [Self-training.ipynb notebook](https://colab.research.google.com/drive/1mWEVufggf9rZDaF8Us1aFWjDGQtajN7N?usp=sharing) on Google Colab.
+
+To run the multi-resolution detection system for detecting medium to large-size craters, follow the instructions provided in the [multi-resolution-detection.ipynb notebook](https://colab.research.google.com/drive/1mWEVufggf9rZDaF8Us1aFWjDGQtajN7N?usp=sharing) on Google Colab.
 
 ## License
 
