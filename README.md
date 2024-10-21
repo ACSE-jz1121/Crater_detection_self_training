@@ -1,79 +1,54 @@
-## Self-training system for small crater detection via IoU-based ensemble learning
+# Self-Training System for Small Crater Detection via IoU-Based Ensemble Learning
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE.txt)
 
 <details open="open">
   <summary>Table of Contents</summary>
   <ol>
-    <li>
-      <a href="#project-description">Project Description</a>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
+    <li><a href="#project-description">Project Description</a></li>
+    <li><a href="#data-source">Data Source</a></li>
+    <li><a href="#getting-started">Getting Started</a>
       <ul>
         <li><a href="#install-dependencies">Install Dependencies</a></li>
+        <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-     <li><a href="#run-all">How to run</a></li>
-    <li><a href="#installation">Installation</a></li>
-    <li><a href="#usage-of-code">Usage of code</a></li>
-    <li><a href="#Contact">Contact</a></li>
-    <li><a href="#Acknowledgements">Acknowledgements</a></li>
+    <li><a href="#how-to-run">How to Run</a></li>
+    <li><a href="#usage-of-code">Usage of Code</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#acknowledgements">Acknowledgements</a></li>
   </ol>
 </details>
 
-
-
-
 ## Project Description
- The objective of this work is to detect impact craters with diameter less than 1km. YOLOv5 model has been utilized as a powerful object detection tool for crater detection. An auto-iterative self-training system has been proposed to detect small craters with diameter less than 1km, which incorporate an IoU-based ensemble learning strategy as an extension of the Pseudo-label selection metric. 
+This project aims to detect small impact craters on Mars, focusing on craters with diameters of less than 1 km. A YOLOv5 model has been employed as the primary object detection framework. An innovative auto-iterative self-training system is proposed, which integrates an IoU-based ensemble learning strategy to enhance small crater detection. This system extends the Pseudo-label selection metric for more accurate results.
 
-The source code for YOLOv5 can be found on [YOLOv5](https://github.com/ultralytics/yolov5). This model provides the benchmark for this project, the instruction on clone yolov5 repositorys is described in the [Self-training.ipynb](https://colab.research.google.com/drive/1mWEVufggf9rZDaF8Us1aFWjDGQtajN7N?usp=sharing)
+The source code for YOLOv5 can be found in the official [YOLOv5 repository](https://github.com/ultralytics/yolov5). Detailed instructions for cloning and using the YOLOv5 repository in this project are provided in the [Self-training.ipynb notebook](https://colab.research.google.com/drive/1mWEVufggf9rZDaF8Us1aFWjDGQtajN7N?usp=sharing).
 
-## Data source
+## Data Source
+The dataset used for crater detection is based on the 2020 version of the Robbins and Hynek Mars Crater Database, which catalogs over 38,400 craters larger than 1 km in diameter. THEMIS Day IR mosaic images are linked to this database based on their longitude and latitude ranges.
 
-The dataset used in this project is generated from the Robbins and Hynek database 2020 version that counts > 38400 craters on mars with diameter greater than 1km. THEMIS DAY IR mosaic images [12] are linked to this database according to their range of longitude and latitude. 
+- The Robbins and Hynek Crater Database can be downloaded from [this link](http://craters.sjrdesign.net/).
+- THEMIS images can be accessed from [the USGS Astrogeology Science Center](https://astrogeology.usgs.gov/search?target=&system=&p=1&accscope=&searchBar=).
 
-Robbins and Hynek dataset can be found on [database download]( http://craters.sjrdesign.net/)
-THEMIS image can be found on [THEMIS](https://astrogeology.usgs.gov/search?target=&system=&p=1&accscope=&searchBar=)
+## Getting Started
 
-
-## Getting started
 ### Install Dependencies
+Ensure the following dependencies are installed:
 
-* pycm>=1.22.4
-* pandas>=1.4.2
-* argparse>=1.4.0
-* numpy>=1.22.4
-* cv>=1.0.0
-* Pillow==9.5.0
-* pylablib>=1.8.1
-* random2>=1.0.1
-* mathematical>=0.5.1
-* (Optional) GPU/multi GPUs with CUDA
+- pycm >= 1.22.4
+- pandas >= 1.4.2
+- argparse >= 1.4.0
+- numpy >= 1.22.4
+- OpenCV (cv) >= 1.0.0
+- Pillow == 9.5.0
+- pylablib >= 1.8.1
+- random2 >= 1.0.1
+- mathematical >= 0.5.1
+- (Optional) GPU/multi-GPU support with CUDA for accelerated training
 
-
-## Installation
+### Installation
 
 Clone the repository:
 ```sh
-
-$ git clone [https://github.com/ese-msc-2021/irp-jz1121.git](https://github.com/ACSE-jz1121/Crater_detection_self_training.git)
-
-Install dependencies
-
-$ pip install -r requirements.txt
-```
-
-
-## License
-
-Under the Apache 2.0 License.
-
-## Contact
-* Janice Zhao jz1121@ic.ac.uk
-
-## Acknowledgements
-Many thanks my supervisors for their supportive suggestions:
-* Prof Gareth Collins
-* Dr Joel Davis
-* Dr Beg Marijan 
+$ git clone https://github.com/ACSE-jz1121/Crater_detection_self_training.git
