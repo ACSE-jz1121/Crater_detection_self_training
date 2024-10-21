@@ -1,4 +1,9 @@
-Dataset derivation: 
+## Dataset Derivation
 
-The Mars crater images are derived from the USGS Astrogeology Science Center's Thermal Emission Imaging System (THEMIS) Day IR Controlled Mosaic images. Can ba accessed at https://pds-imaging.jpl.nasa.gov/volumes/ody.html
-The crater information, including latitude, longitude, and diameter, is derived from the dataset by Robbins and Hynek. Can be accessed at: https://craters.sjrdesign.net/
+The Mars crater images used in this project are derived from the USGS Astrogeology Science Center's Thermal Emission Imaging System (THEMIS) Day IR Controlled Mosaic images. These can be accessed at the following link:
+
+- [THEMIS Day IR Controlled Mosaic Images](https://pds-imaging.jpl.nasa.gov/volumes/ody.html)
+
+The crater information, including latitude, longitude, and diameter, is sourced from the dataset compiled by Robbins and Hynek. This dataset can be accessed here:
+
+- [Robbins and Hynek Mars Crater Database](https://craters.sjrdesign.net/)
