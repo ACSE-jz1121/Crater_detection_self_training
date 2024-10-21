@@ -33,22 +33,29 @@ The dataset used for crater detection is based on the 2020 version of the Robbin
 
 ## Getting Started
 
-### Install Dependencies
-Ensure the following dependencies are installed:
 
-- pycm >= 1.22.4
-- pandas >= 1.4.2
-- argparse >= 1.4.0
-- numpy >= 1.22.4
-- OpenCV (cv) >= 1.0.0
-- Pillow == 9.5.0
-- pylablib >= 1.8.1
-- random2 >= 1.0.1
-- mathematical >= 0.5.1
-- (Optional) GPU/multi-GPU support with CUDA for accelerated training
-
-### Installation
+## Installation
 
 Clone the repository:
-```sh
-$ git clone https://github.com/ACSE-jz1121/Crater_detection_self_training.git
+sh
+
+$ git clone [https://github.com/ese-msc-2021/irp-jz1121.git](https://github.com/ACSE-jz1121/Crater_detection_self_training.git)
+
+Install dependencies
+
+$ pip install -r requirements.txt
+
+
+
+## License
+
+Under the Apache 2.0 License.
+
+## Contact
+* Janice Zhao jz1121@ic.ac.uk
+
+## Acknowledgements
+Many thanks my supervisors for their supportive suggestions:
+* Prof Gareth Collins
+* Dr Joel Davis
+* Dr Beg Marijan 
