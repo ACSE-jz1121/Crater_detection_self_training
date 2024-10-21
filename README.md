@@ -9,7 +9,6 @@
     <li><a href="#getting-started">Getting Started</a>
       <ul>
         <li><a href="#install-dependencies">Install Dependencies</a></li>
-        <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
     <li><a href="#how-to-run">Workflow</a></li>
@@ -34,7 +33,7 @@ The dataset used for crater detection is based on the 2020 version of the Robbin
 ## Getting Started
 
 
-## Installation
+## Installation-dependencies
 
 Clone the repository:
 sh
