@@ -66,7 +66,7 @@ THEMIS image can be found on [THEMIS](https://astrogeology.usgs.gov/search?targe
 Clone the repository:
 ```sh
 
-$ git clone https://github.com/ese-msc-2021/irp-jz1121.git
+$ git clone [https://github.com/ese-msc-2021/irp-jz1121.git](https://github.com/ACSE-jz1121/Crater_detection_self_training.git)
 
 Install dependencies
 
